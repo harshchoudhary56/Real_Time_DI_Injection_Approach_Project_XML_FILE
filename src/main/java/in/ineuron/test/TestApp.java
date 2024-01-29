@@ -34,7 +34,8 @@ public class TestApp {
 		customerVO.setPrincipalAmount(principalAmount);
 		customerVO.setRate(rate);
 		customerVO.setTime(time);
-		
+
+		// To read the data from properties file into xml by the container we need to use "ApplicationContext(I)"  IOC container.
 		ClassPathXmlApplicationContext factory = new ClassPathXmlApplicationContext("/in/ineuron/cfg/applicationContext.xml");		
 		System.out.println("**********CONTAINER STARTED**********");
 		
